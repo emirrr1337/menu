@@ -7,27 +7,176 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-stone-950 text-stone-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
+<body class="bg-stone-950 text-stone-100 font-sans antialiased">
 
-    <header class="text-center py-10 bg-stone-900 border-b border-amber-500/20 shadow-2xl relative overflow-hidden">
-        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="relative z-10 max-w-md mx-auto px-4">
-            <div class="flex justify-center gap-4 text-amber-500 text-3xl mb-3 animate-pulse">
-                <i class="fa-solid fa-burger"></i>
-                <i class="fa-solid fa-pizza-slice"></i>
-            </div>
-            <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase text-white">TRÜFF BURGER & PIZZA</h1>
-            <p class="text-xs text-amber-500 font-semibold tracking-widest mt-1 uppercase">Dijital Menü</p>
+    <header class="text-center py-10 bg-stone-900 border-b border-amber-500/20 shadow-2xl">
+        <div class="flex justify-center gap-4 text-amber-500 text-3xl mb-3">
+            <i class="fa-solid fa-burger"></i>
+            <i class="fa-solid fa-pizza-slice"></i>
         </div>
+        <h1 class="text-3xl font-black tracking-tight uppercase text-white">TRÜFF BURGER & PIZZA</h1>
+        <p class="text-xs text-amber-500 font-semibold tracking-widest mt-1 uppercase">Dijital Menü</p>
     </header>
 
-    <div class="sticky top-0 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 z-50 py-3 shadow-lg overflow-x-auto whitespace-nowrap scrollbar-none">
-        <div class="max-w-md mx-auto px-4 flex justify-between gap-2">
-            <a href="#hamburger" class="bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-xs font-bold px-4 py-2 rounded-xl transition duration-200">🍔 Hamburger</a>
-            <a href="#pizza" class="bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-xs font-bold px-4 py-2 rounded-xl transition duration-200">🍕 Pizza</a>
-            <a href="#ekstralar" class="bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-xs font-bold px-4 py-2 rounded-xl transition duration-200">🍟 Ekstralar</a>
-            <a href="#icecekler" class="bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-xs font-bold px-4 py-2 rounded-xl transition duration-200">🥤 İçecekler</a>
+    <div class="sticky top-0 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 z-50 py-3 text-center">
+        <div class="max-w-md mx-auto px-4 flex justify-center gap-2 overflow-x-auto">
+            <a href="#hamburger" class="bg-stone-800 text-stone-200 text-xs font-bold px-3 py-2 rounded-xl">🍔 Hamburger</a>
+            <a href="#pizza" class="bg-stone-800 text-stone-200 text-xs font-bold px-3 py-2 rounded-xl">🍕 Pizza</a>
+            <a href="#ekstralar" class="bg-stone-800 text-stone-200 text-xs font-bold px-3 py-2 rounded-xl">🍟 Ekstralar</a>
+            <a href="#icecekler" class="bg-stone-800 text-stone-200 text-xs font-bold px-3 py-2 rounded-xl">🥤 İçecekler</a>
         </div>
     </div>
 
     <main class="max-w-md mx-auto px-4 py-8 pb-24 space-y-12">
+
+        <section id="hamburger">
+            <h2 class="text-xl font-black text-amber-500 border-b border-amber-500/20 pb-2 mb-4 uppercase tracking-wide">
+                🍔 Hamburgerler
+            </h2>
+            <div class="space-y-3">
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Trüff Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Dana smash köfte, cheddar, turşu, ızgara soğan, trüff mayonez sos.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">375 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Login Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Dana smash köfte, cheddar, turşu, burger sos.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">350 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Bacon Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Dana bacon, dana smash köfte, cheddar, turşu, burger sos.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">460 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Kaburga Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Dana kaburga, dana smash köfte, turşu, cheddar, trüff mayonez.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">500 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Hot Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Dana smash köfte, jalapeno turşu, cheddar, acı mayonez sos.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">385 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Chicken Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Kızarmış tavuk göğsü, cheddar, kırmızı soğan, iceberg, turşu, burger sos.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">250 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center shadow-md">
+                    <div class="pr-3">
+                        <h3 class="font-bold text-white text-base">Avakado Chicken Burger</h3>
+                        <p class="text-xs text-stone-400 mt-1">Kızarmış tavuk göğsü, avakado, acı sos, turşu, cheddar.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg whitespace-nowrap">275 ₺</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pizza">
+            <h2 class="text-xl font-black text-amber-500 border-b border-amber-500/20 pb-2 mb-4 uppercase tracking-wide">
+                🍕 Pizzalar
+            </h2>
+            <div class="space-y-3">
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Margarita</h3>
+                    <p class="text-xs text-stone-400 mt-1">Mozerella, chery domates, özel pizza sos.</p>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Karışık Pizza</h3>
+                    <p class="text-xs text-stone-400 mt-1">Sosis, salam, mantar, biber, mozerella, özel pizza sos.</p>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Bacon Pizza</h3>
+                    <p class="text-xs text-stone-400 mt-1">Dana bacon, chery domates, mozerella, özel pizza sos.</p>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Kaburga Pizza</h3>
+                    <p class="text-xs text-stone-400 mt-1">Dana kaburga füme, chery domates, mozerella, özel pizza sos.</p>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Mexican Pizza</h3>
+                    <p class="text-xs text-stone-400 mt-1">Dana kıyma, jalapeno, kırmızı soğan, mozerella, özel pizza sos.</p>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Akdeniz Pizza</h3>
+                    <p class="text-xs text-stone-400 mt-1">Chery domates, ezine peynir, yeşil zeytin, yeşil biber, kekik, mozerella, özel pizza sos.</p>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800">
+                    <h3 class="font-bold text-white text-base">Pepperoni Pizza</h3>
+                    <p class="text-xs text-stone-400 mt-1">Dana sucuk, mantar, mozerella, özel pizza sos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ekstralar">
+            <h2 class="text-xl font-black text-amber-500 border-b border-amber-500/20 pb-2 mb-4 uppercase tracking-wide">
+                🍟 Ekstralar & Tatlılar
+            </h2>
+            <div class="space-y-3">
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center">
+                    <h3 class="font-bold text-white">Patates Tava</h3>
+                    <div class="text-amber-500 font-black text-lg">190 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center">
+                    <h3 class="font-bold text-white">Soğan Halkası</h3>
+                    <div class="text-amber-500 font-black text-lg">165 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center">
+                    <h3 class="font-bold text-white">Mozerella Sticks</h3>
+                    <div class="text-amber-500 font-black text-lg">190 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center">
+                    <h3 class="font-bold text-white">Çıtır Tavuk</h3>
+                    <div class="text-amber-500 font-black text-lg">250 ₺</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-white">Çokopanya</h3>
+                        <p class="text-[11px] text-stone-400 mt-0.5">Nutella çikolatası, fındık parçacıkları.</p>
+                    </div>
+                    <div class="text-amber-500 font-black text-lg">---</div>
+                </div>
+                <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex justify-between items-center">
+                    <h3 class="font-bold text-white">Sufle</h3>
+                    <div class="text-amber-500 font-black text-lg">---</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="icecekler">
+            <h2 class="text-xl font-black text-amber-500 border-b border-amber-500/20 pb-2 mb-4 uppercase tracking-wide">
+                🥤 İçecekler
+            </h2>
+            <div class="bg-stone-900 rounded-xl border border-stone-800 divide-y divide-stone-800 overflow-hidden">
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">Kola</span> <span class="text-amber-500 font-black">75 ₺</span></div>
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">Fanta</span> <span class="text-amber-500 font-black">75 ₺</span></div>
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">Sprite</span> <span class="text-amber-500 font-black">75 ₺</span></div>
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">1 lt Kola</span> <span class="text-amber-500 font-black">100 ₺</span></div>
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">Ayran</span> <span class="text-amber-500 font-black">55 ₺</span></div>
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">Fuse Tea (Limon/Şeftali/Mango)</span> <span class="text-amber-500 font-black">75 ₺</span></div>
+                <div class="p-4 flex justify-between items-center"><span class="text-stone-200">Su</span> <span class="text-amber-500 font-black">20 ₺</span></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="fixed bottom-0 left-0 right-0 bg-stone-900 border-t border-stone-800 py-4 text-center max-w-md mx-auto z-50">
+        <p class="text-xs font-bold text-stone-300">✨ Trüff Burger & Pizza ✨</p>
+    </footer>
+
+</body>
+</html>
